@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+div#conteudo {
+		width: 100%;
+		float: right;		
+		}
+
+figure {
+    display: inline-block;
+    border: 0px dotted gray;
+    margin: 20px; /* adjust as needed */
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    border: 1px dotted blue;
+    text-align: center;
+}
+
+iframe {
+  align-self: center;
+}
+
+p {
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+}

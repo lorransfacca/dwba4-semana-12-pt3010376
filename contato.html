@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <title>CONTATO - IFSP - Pirituba</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!--<link href="style.css" rel="stylesheet" -->
+    <!--Comentei os dados default do head e utilizei parecidos com a página modelo, porém, não apareceu o Favicon -->
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/formularios.css">
+     <script src="js/disabling.js"></script>
+  </head>
+
+  <body>
+    <header id="cabecalho">
+
+      <nav>
+        <object width="100%" data="menu.html"></object>
+      </nav>
+    
+
+    <!--Construindo o formulário requerido no exercício-->
+
+    <main>
+      <h1>Mande uma mensagem</h1>
+
+      <form method="POST">
+        <ul>
+          <li>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+          </li>
+          <li>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+          </li>
+          <li>
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone"> (11) 9 9999-9999<br>
+          </li>
+          <li>
+            <label for="assunto">Assunto</label>
+            <select name="assunto">
+              <option value="selecione">--Selecione--</option>
+              <option value="reclamacao">Reclamação</option>
+              <option value="sugestao">Sugestão</option>
+            </select>
+          </li>
+          <li>
+            <label for="mensagem">Mensagem<br></label>
+            <textarea></textarea><br>
+          </li>
+          <li>
+            <fieldset>
+              <legend>Opções de Resposta</legend>
+              <input type="checkbox" name="resposta" value="email">E-mail
+              <input type="checkbox" name="resposta" value="telefone">Telefone<br>
+            </fieldset>            
+          </li>
+          <li>
+            <button type="submit">Enviar</button>
+          </li>
+        </ul>
+      </form>
+    </main>
+    
+    <footer>
+       <object width="100%" height="200px" data="rodape.html"></object>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

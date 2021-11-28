@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <title>ENTRAR - IFSP - Pirituba</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+   
+     <script src="js/disabling.js"></script>
+      <link rel="stylesheet" href="css/entrar.css">
+     <!-- Principal CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	 crossorigin="anonymous">
+	<link href="css/signin.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+    <header id="cabecalho">
+
+      <nav>
+        <object width="100%" data="menu.html"></object>
+      </nav>
+    
+
+    <!--Construindo o formulário requerido no exercício-->
+
+    <main> 
+
+    <form class="form-signin">
+ 
+        <img class="mb-4" src="images/ifsp.png" alt="emblema ifsp" width="72" height="72">
+      
+        <h1 class="h3 mb-3 font-weight-normal">Faça login</h1>
+     
+        <label for="email" class="sr-only">E-mail</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required autofocus>
+        <label for="senha" class="sr-only">Senha</label>
+        <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha" required autofocus>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="Lembrar-me"> Lembrar de mim
+        </label>
+      </div>
+      <div>
+        <a href="#">Esqueci a senha</a>
+      </div>
+        <button type="submit">Login</button>
+        <p>&copy; 2020</p>
+    </form>
+    </main>
+    
+    <footer>
+       <object width="100%" height="200px" data="rodape.html"></object>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

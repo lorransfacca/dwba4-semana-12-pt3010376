@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <title>EVENTOS - IFSP - Pirituba</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!--<link href="style.css" rel="stylesheet" -->
+    <!--Comentei os dados default do head e utilizei parecidos com a página modelo, porém, não apareceu o Favicon -->
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/formularios.css">
+     <script src="js/disabling.js"></script>
+  </head>
+
+  <body>
+    <header id="cabecalho">
+
+      <nav>
+        <object width="100%" data="menu.html"></object>
+      </nav>
+    
+
+    <!--Construindo o formulário requerido no exercício-->
+ 
+
+    <p><b>INSCREVA-SE</b></p>
+
+    <form " method="POST">
+      <!--Campo Evento com caixa de seleção de menus-->
+      <fieldset>
+
+        <label for="evento">Evento:</label>
+          <select name="evento">
+            <option value="selecione">--Selecione--</option>
+            <option value="voar_s_asas">Voe sem Asas</option>
+            <option value="festaJunina">Festa Junina</option>
+            <option value="semanaTecnologia">Semana de Tecnologia</option>
+          </select>
+        </fieldset>
+    
+
+      <!--Campo Informações de Acesso -->
+      <fieldset>
+        <legend>Informações de Acesso</legend>
+        <label for="usuario">Usuário</label>
+        <input type="text" name="usuario" id="usuario"><br><br>
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha"><br><br>
+        <label for="confirmarSenha">Confirme a Senha</label>
+        <input type="password" name="confirmarSenha" id="confirmarSenha">
+      </fieldset>
+
+      <!--Campo de Informações Pessoais-->
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        <label for="nome">Nome Completo</label>
+        <input name="nome" id="nome"><br><br>
+        <label for="input_email">E-mail</label>
+        <input type="email" name="email" id="input_email"><br><br>
+        <label for="celular">Celular</label>
+        <input type="tel" name="celular" id="celular"> (11) 9 9999-9999<br><br>
+        <!--Subcampo de gênero do tipo radio-->
+        <fieldset>
+          <legend>Gênero</legend>
+            <input type="radio" valeu="Nao_Binario" name="lp"/>Não Binário<br>
+            <input type="radio" valeu="Feminino" name="lp"/>Feminino<br>
+            <input type="radio" valeu="Masculino" name="lp"/>Masculino<br>
+            <input type="radio" valeu="Vazio" name="lp"/>Prefiro Não Responder<br>          
+        </fieldset>
+        <label for="input_birth"><br>Data de Nascimento</label>
+        <input type="date" name="input_birth" id="input_birth"><br><br>
+        <label for="input_color">Cor Predileta</label>
+        <input type="color" name="input_color" id="input_color"><br><br>
+        Hobbies:<br>
+        <textarea></textarea><br><br>
+        <label for="perfil_github">Perfil Github</label>
+        <input type="url" name="perfil_github" id="perfil_github"><br><br>      
+      </fieldset>
+
+      <p>
+        <button type="submit">Inscrever</button>
+        <button type="reset">Limpar Dados</button>
+      </p>
+
+    </form>
+    
+    <footer>
+       <object width="100%" height="200px" data="rodape.html"></object>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
